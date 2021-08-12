@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+}
+
+
+#corpo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#corpo > div:last-child{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#visor{
+    border: 1px solid black;
+    height: 60px;
+    margin: 10px;
+}
+
+#aparecernovisor{
+    text-align: right;
+    margin: 12px 10px;
+}
+
+#numeros{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+}
+
+#numeros > div{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 5px auto;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+#numeros > div:hover{
+    background-color: blue;
+}
+
+#numero0{
+    grid-column: 1/3;
+    width: 100px !important;
+}
+
+.numero{
+    background-color: gray;
+}
+
+.operacoes{
+    background-color: orange;
+}

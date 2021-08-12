@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+
+#escolhendo{
+    display: grid;
+    grid-template-rows: repeat(8, 40px);
+}
+
+.tempox{
+    display: grid;
+    grid-template-columns: repeat(5,70px);
+    column-gap: 10px;
+}
+
+.tempox a{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.teste{
+    font-weight: bold;
+}
+
+#resultadox{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+
+#resultadox p{
+    text-align: center;
+}
+
+.xx{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}

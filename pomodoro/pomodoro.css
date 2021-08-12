@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+}
+
+#tempo{
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+
+#visor{
+    display: grid;
+    grid-template-columns: 1fr 25px 1fr;
+    border: 1px solid white;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+
+#visor h1{
+    font-size: 70px;
+}
+
+#visor p{
+    font-size: 25px;
+}
+
+
+#visor h1, p{
+    text-align: center;
+}
+
+#boasvindas p{
+    font-size: 50px;
+    padding: 10px 0 5px;
+    text-align: center;
+}
+
+
+#botao_acao_visor{
+    padding: 5px 0px;
+    display: grid;
+}
+
+.botao{
+    padding: 5px 10px;
+    border: 1px solid black;
+    margin: 5px auto;
+    width: 130px;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botao:hover{
+    background-color: blue;
+}
+
+#introducao h1{
+    font-size: 80px;
+    text-align: center;
+}
+
+#tarefasx{
+    width: 100%;
+    background-color: green;
+    padding: 10px 0;
+}
+
+.tarefa{
+    display: grid;
+    grid-template-columns: 40px 1fr 70px 70px;
+    column-gap: 5px;
+    margin: 10px;
+    text-align: center;
+    background-color: green;
+}
+
+.tarefa > div > p{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#tarefasx h1{
+    text-align: center;
+}
+
+.tarefa{
+    display: grid;
+    grid-template-columns: 40px 1fr 70px 70px;
+    column-gap: 5px;
+    margin: 10px;
+}
+
+.tarefax > div{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.tarefax p{
+    text-align: center;
+    margin: auto;
+}
+
+.tarefax img{
+    margin: auto;
+}
+
+#popup_novatarefa{
+    display: none;
+    grid-template-rows: 20vh 1fr 20vh;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+#lateral1, #lateral2, #popup_novatarefa > div:first-child, #popup_novatarefa > div:last-child{
+    background-color: rgba(87, 87, 87,0.3);
+}
+
+#popup_centro{
+    display: grid;
+    grid-template-columns: 20vw 1fr 20vw;
+}
+
+#conteudopopup{
+    background-color: white;
+}
+
+#botaofecharpopup{
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: grid;
+    cursor: pointer;
+    position: absolute;
+    right: 20vw;
+    margin-right: -10px;
+    margin-top: -10px;
+    background: white;
+}
+
+#botaofecharpopup:hover{
+    background-color: red;
+}
+
+#botaofecharpopup a{
+    text-align: center;
+    font-size: 24px;
+    margin-top: -3px;
+}
+
+#conteudopopup h1{
+    text-align: center;
+    margin-top: 15px;
+}
+
+#conteudopopup form{
+    display: grid;
+    grid-template-rows: 30px 30px;
+    row-gap: 10px;
+    width: 90%;
+    margin: 10px auto 0px;
+}
+
+#conteudopopup form input{
+    grid-row: 1;
+}
+
+#conteudopopup form button{
+    grid-row: 2;
+}
+
+#botao_iniciar{
+    cursor: pointer;
+}
+
+#tarefas p{
+    font-size: 25px !important;
+}
+
+#botao_acao_visor #botao_descanso{
+    display: none;
+}

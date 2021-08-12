@@ -1,0 +1,318 @@
+*{
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+}
+#corpo{
+    margin-top: 40px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* MENU */
+#menu{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,1);
+    position: fixed;
+}
+
+#menu_resumo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 70%;
+    min-width: 500px;
+    margin: 5px auto;
+}
+
+#menu_resumo a{
+    text-align: center;
+    padding: 2px 5px;
+    border: 1px solid white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+
+#menu_resumo a:first-child{
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#menu_resumo a:last-child{
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+#menu_resumo a:hover{
+    background-color: blue;
+}
+
+
+/* SOBRE MIM */
+#sobremim{
+    height: 60vh;
+    background-color: red;
+}
+
+#sspjk{
+    display: grid;
+    width: 400px;
+    margin: auto;
+    grid-template-columns: 200px 100px;
+    padding-top: 15px;
+}
+
+#minhafoto{
+    border: 1px solid white;
+    width: 160px;
+    height: 200px;
+}
+
+/* PORTIFÓLIO */
+#portifolio{
+    background-color: white;
+    min-height: 500px;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    width: 100%;
+}
+
+#indice_portifolio{
+    margin: auto;
+    display: flex;
+    column-gap: 10px;
+}
+
+#indice_portifolio a{
+    font-size: 35px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#indice_portifolio a:hover{
+    color: red;
+}
+
+#portifolio .testandosss{
+    width: calc(100vw - 10px);
+}
+
+.icarozinho{
+    width: 120px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+.icaroxx{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0px 5px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.icaroxx > div{
+    margin: auto;
+}
+
+.icaroxx > div > p{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.xxx{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    padding: 10px 0;
+    margin: auto;
+    width: 99%;
+}
+
+.controlex{
+    margin-top: 40px;
+    margin-left: 2px;
+    margin-right: 5px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.controlex:hover{
+    background-color: red;
+}
+.controlex p{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+.controley{
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 2px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.controley:hover{
+    background-color: red;
+}
+.controley p{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+/* CERTIFICADOS */
+#certificados{
+    background-color: white;
+    width: 100%;
+    min-height: 400px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    column-gap: 10px;
+}
+
+#indice_certificados{
+    margin: auto;
+}
+
+#certificados ul{
+    padding: 0;
+}
+
+#certificados ul li{
+    list-style: none;
+}
+
+#certificados ul li a{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#certificados ul li a:hover{
+    color: red;
+}
+
+#certificados #mostrar_certificados iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#mostrar_certificados{
+    border-left: 2px solid black;
+}
+
+
+.principal{
+    font-size: 25px !important;
+    font-weight: bold;
+    cursor: default !important;
+}
+
+.principal:hover{
+    color: black !important;
+}
+
+.testt{
+    border: 1px solid black;
+    width: 70%;
+    height: 15px;
+    margin: auto 10px auto 0;
+}
+
+#skill_javascript{
+    background-color: red;
+    width: 50%;
+    height: 15px;
+}
+
+.ssa{
+    display: flex;
+    vertical-align: middle;
+    column-gap: 30px;
+}
+
+.ssa h2{
+    margin-left: 10px;
+}
+
+
+
+
+/* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+    border-radius: 20px;
+    }
+     
+    /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+    ::-webkit-scrollbar-track {
+    background:white;
+    border-radius: 20px;
+    }
+     
+    /* aqui é a alça da barra, que demonstra a altura que você está na página
+    estou colocando uma cor azul clara nela*/
+    ::-webkit-scrollbar-thumb {
+    background: black;
+    }
+
+/* degrade para a barra vertical */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 20px;
+    }
+     
+    /* degrade para a barra horizontal com a direção do degrade alterada */
+    ::-webkit-scrollbar-thumb:horizontal {
+    background: black;
+    border-radius: 20px;
+    }
+
+
+
+
+.scroll::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+    }
+     
+    .scroll::-webkit-scrollbar-track {
+    background:#333;
+    }
+     
+    .scroll::-webkit-scrollbar-thumb {
+    background: black;
+    }
